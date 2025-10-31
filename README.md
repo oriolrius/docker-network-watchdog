@@ -6,7 +6,7 @@ A simple bash script that monitors Docker networks and alerts you when networks 
 
 Docker's `default-address-pools` configuration in `/etc/docker/daemon.json` only applies to networks created **without** explicit subnet definitions. When docker-compose files or `docker network create` commands specify custom subnets using `ipam:` configurations, they override the default pools.
 
-This can lead to unexpected network ranges being used, potentially causing conflicts with your protected IP ranges.
+> **⚠️ IMPORTANT:** This can lead to unexpected network ranges being used, potentially causing conflicts with your protected IP ranges.
 
 ## Solution
 
